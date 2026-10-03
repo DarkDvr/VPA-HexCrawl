@@ -1,0 +1,146 @@
+/* Styles for vpahexcrawl PoC. */
+
+.vpahexcrawl-map-container {
+	background: var(--background-primary);
+	color: var(--text-normal);
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.vpahexcrawl-map-canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: var(--background-primary);
+	border-radius: var(--radius-s);
+	touch-action: none;
+}
+
+.vpahexcrawl-map-canvas:focus-visible {
+	outline: 1px solid var(--background-modifier-border);
+	outline-offset: -1px;
+}
+
+.vpahexcrawl-name-modal .vpahexcrawl-name-title {
+	font-size: var(--font-ui-large);
+	color: var(--text-normal);
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-name-modal .vpahexcrawl-name-input {
+	width: 100%;
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-name-modal .vpahexcrawl-name-buttons {
+	display: flex;
+	gap: var(--size-4-2);
+	justify-content: flex-end;
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-title {
+	font-size: var(--font-ui-large);
+	color: var(--text-normal);
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-tileset-row {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-2);
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-tileset-label {
+	font-size: var(--font-ui-small);
+	color: var(--text-muted);
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-tileset-select {
+	flex: 1;
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-title {
+	font-size: var(--font-ui-large);
+	color: var(--text-normal);
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-text {
+	color: var(--text-normal);
+	margin-bottom: var(--size-4-2);
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-input {
+	width: 100%;
+	margin-bottom: var(--size-4-4);
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-buttons {
+	display: flex;
+	gap: var(--size-4-2);
+	justify-content: flex-end;
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-confirm {
+	background-color: var(--background-modifier-error);
+	color: var(--text-on-accent);
+	border-color: transparent;
+}
+
+.vpahexcrawl-delete-modal .vpahexcrawl-delete-confirm:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-list {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: var(--size-4-2);
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-pick {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--size-4-2);
+	padding: var(--size-4-3);
+	height: 128px;
+	min-height: 128px;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-pick.is-active {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: -2px;
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-thumb {
+	width: 64px;
+	height: 64px;
+	flex-shrink: 0;
+	pointer-events: none;
+	object-fit: contain;
+}
+
+.vpahexcrawl-terrain-modal .vpahexcrawl-terrain-name {
+	font-size: var(--font-ui-small);
+	color: var(--text-normal);
+	pointer-events: none;
+	text-align: center;
+	width: 100%;
+	white-space: normal;
+	word-break: break-word;
+	line-height: 1.2;
+	min-height: 2.4em;
+	max-height: 2.4em;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}

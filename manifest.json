@@ -1,0 +1,10 @@
+{
+	"id": "vpahexcrawl",
+	"name": "VPA HexCrawl",
+	"version": "1.0.1",
+	"minAppVersion": "1.13.0",
+	"description": "Endless flat-top hex map for worldbuilding.",
+	"author": "DarkDvr",
+	"authorUrl": "",
+	"isDesktopOnly": false
+}
