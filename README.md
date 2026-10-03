@@ -11,7 +11,8 @@ Paint continents one hex at a time. Watch forests, roads, and rivers join themse
 - **Make it yours.** Default tileset not covering your story's needs? Add your own tilesets with terrain or features as a folder with PNGs, and use it on your map immediately. Also, use your own player or party token if you want to.
 - **Easy controls.** Double click, right click - it's all there.
 - **Configurable.** Many things can be changed through built-in plugin settings menu.
-- # Install
+
+## Install
 1. Copy `main.js`, `styles.css`, and `manifest.json` into `<vault>/.obsidian/plugins/vpahexcrawl/`.
 2. Enable `VPA HexCrawl` under Settings → Community plugins.
 3. Hit the hexagon ribbon button and start anywhere.
